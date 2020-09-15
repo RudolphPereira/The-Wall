@@ -6,7 +6,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
 header {
@@ -21,9 +21,9 @@ header {
 h1 {
   font-family: "Satisfy", cursive;
   text-decoration: none;
-  color: white;
+  color: crimson;
   padding: 1rem;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 
 .search-form {
@@ -36,11 +36,12 @@ h1 {
   padding: 0.4rem;
   border: none;
   outline: none;
-  border: 2px solid crimson;
+  border: 2px solid dimgray;
 }
 
 .search-btn {
-  background: crimson;
+  background: dimgray;
   color: white;
   cursor: pointer;
+  transition: all 0.5s ease;
 }

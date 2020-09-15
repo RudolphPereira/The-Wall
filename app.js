@@ -16,4 +16,19 @@ async function curratedPhotos() {
     }
   );
   const data = await dataFetch.json();
+
+  data.photos.forEach((photo) => {
+    const gallaryImg = document.createElement("div");
+    gallaryImg.classList.add("gallary-img");
+    gallaryImg.innerHTML = `
+        <div class = 'gallary-info'
+            <p>${photo.photographer}</p>
+            <a href = ${photo.src.original}>Download</a>
+        </div>
+        <img src = ${photo.src.large}></img>
+    `;
+    gallary.appendChild(gallaryImg);
+  });
 }
+
+curratedPhotos();
