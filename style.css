@@ -9,6 +9,11 @@ body {
   background: linear-gradient(to right, #d3cce3, #e9e4f0);
 }
 
+i,
+svg {
+  pointer-events: none;
+}
+
 header {
   display: flex;
   flex-direction: column;

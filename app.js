@@ -4,6 +4,18 @@ const searchInput = document.querySelector(".search-input");
 const form = document.querySelector(".search-form");
 let searchValue;
 
+// Add Event Listeners
+
+searchInput.addEventListener("input", loadMore);
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  searchPhotos(searchValue);
+});
+
+function loadMore(e) {
+  searchValue = e.target.value;
+}
+
 async function curratedPhotos() {
   const dataFetch = await fetch(
     "https://api.pexels.com/v1/curated?per_page=15&page=1",
