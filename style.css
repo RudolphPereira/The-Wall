@@ -89,3 +89,34 @@ h1 {
 .gallary-info a:hover {
   color: white;
 }
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
+
+.more {
+  border: none;
+  outline: none;
+  padding: 0.7rem 3rem;
+  font-size: 1.1rem;
+  color: white;
+  background: #d9a7c7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.more:hover {
+  background: white;
+  color: #d9a7c7;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9a7c7;
+}
