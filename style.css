@@ -40,7 +40,7 @@ h1 {
   font-size: 1.3rem;
   padding: 0.4rem;
   border: none;
-  border-radius: none;
+  border-radius: 0;
   outline: none;
   border: 2px solid #d9a7c7;
 }
@@ -56,10 +56,10 @@ h1 {
   width: 90%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
   row-gap: 5rem;
   column-gap: 2rem;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .gallary-img {
@@ -114,10 +114,10 @@ h1 {
   color: #d9a7c7;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #d9a7c7;
-}
+} */
