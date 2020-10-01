@@ -53,10 +53,10 @@ h1 {
 }
 
 .gallary {
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   row-gap: 5rem;
   column-gap: 2rem;
   padding: 0 2rem;
@@ -114,10 +114,10 @@ h1 {
   color: #d9a7c7;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #d9a7c7;
-} */
+}
